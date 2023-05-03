@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+  <head>
+     <meta charset="utf-8"/>
+     <meta name="Formulario" content="Recopilacion de informacion a enviar">   
+     <title>Formulario</title>
+     <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="js/Formulario.js"></script>
+     
+  </head>
+
+  <body>
+        <header>
+            <select name="theme-select" id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="blue">Blue</option>
+            </select>
+            <figure>
+                <img class="zoom" src="img/mensaje.png" alt="Foto" width="50" height="50">
+            </figure>
+            <hgroup>
+                <h1 style="font-family:verdana" class="zoom">Contactenos</h1>
+            </hgroup>
+        </header>
+            <div class="box">
+                    <form id="frmDatosPersonales">
+                        <div class="inputBox">
+                            <input type="text" required="" id="Nombre">
+                            <label>Nombre completo</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" required="" id="E-mail">
+                            <label>E-mail</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="" id="Asunto">
+                            <label>Asunto</label>
+                        </div>
+                        <div class="inputBox">
+                            <textarea id="Mensaje" required=""></textarea>
+                            <label>Mensaje</label>
+                        </div>
+                        <input type="submit" value="Subir" title="Haga clic para enviar el formulario" onclick="leerValoresCampos()">
+                        <input type="reset" value="Borrar" title="Haga clic para reiniciar el formulario">
+                    </form>
+            </div>
+      <script src="js/Fondo.js"></script>
+  </body>
+
+</html>

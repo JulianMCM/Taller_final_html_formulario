@@ -1,0 +1,148 @@
+body{
+    width: 1024px;
+    margin: 0px auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+}
+h1 {
+    font: bold 30px verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+h2 {
+    font: bold 20px verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+select {
+    position: absolute; right: 0;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 0.25rem;
+}
+#descarga {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 5px;
+    color: #000000;
+}
+#descarga li a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.zoom {
+    transition: transform .2s; 
+}
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+:root.light {
+  --bg-color: #fff;
+  --text-color: rgb(0, 0, 0);
+}
+:root.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+:root.blue {
+  --bg-color: #05396B;
+  --text-color: #d5d2e0;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+	margin-bottom:20px;
+}
+.box .inputBox{
+	position: relative;
+}
+.box .inputBox input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .inputBox textarea{
+    width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+#1{
+	width: 90%;
+}
+.box .inputBox label{
+	position: absolute;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	pointer-events: none;
+	transition: .5s;
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+.box input[type="submit"]{
+	display: block;
+	padding: 0.5rem 1rem;
+	width: 200px;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #000000;
+	background: #00ff22;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.box input[type="reset"]{
+	display: block;
+	padding: 0.5rem 1rem;
+	width: 200px;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #000000;
+	background: #f30707;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
